@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_recipes"
+        android:title="Recipes"
+        android:icon="@drawable/ic_recipe" />
+
+    <item
+        android:id="@+id/menu_menu_planner"
+        android:title="Menu Planner"
+        android:icon="@drawable/ic_meal_planner" />
+
+    <item
+        android:id="@+id/menu_blog"
+        android:title="Blog"
+        android:icon="@drawable/ic_blog" />
+</menu>

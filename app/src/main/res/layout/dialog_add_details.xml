@@ -1,0 +1,41 @@
+<!-- dialog_add_details.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- EditText for the name -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"/>
+
+    <!-- EditText for the biography -->
+    <EditText
+        android:id="@+id/etBiography"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Biography"/>
+
+    <!-- Button to add details -->
+    <Button
+        android:id="@+id/btnAddDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBiography"
+        android:layout_marginTop="16dp"
+        android:text="Add Details"/>
+
+    <!-- Button to cancel -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddDetails"
+        android:layout_marginTop="8dp"
+        android:text="Cancel"/>
+</RelativeLayout>
