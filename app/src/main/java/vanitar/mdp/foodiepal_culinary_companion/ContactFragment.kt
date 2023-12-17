@@ -16,7 +16,6 @@ class ContactFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_contact, container, false)
-
         val btnCall: MaterialButton = view.findViewById(R.id.btnCall)
         val btnEmail: MaterialButton = view.findViewById(R.id.btnEmail)
 
@@ -26,7 +25,7 @@ class ContactFragment : Fragment() {
         }
 
         btnEmail.setOnClickListener {
-            composeEmail("vnanyonjo@miu.edu")
+            composeEmail("vanitarheavens@gmail.com")
         }
 
         return view

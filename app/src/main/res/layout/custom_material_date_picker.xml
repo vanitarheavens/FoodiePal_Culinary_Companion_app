@@ -15,14 +15,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <EditText
-        android:id="@+id/etDate"
+    <DatePicker
+        android:id="@+id/datePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Date"/>
-    <!-- Add layout_width attribute to the MaterialDatePicker container -->
-    <FrameLayout
-        android:id="@+id/materialDatePickerContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:calendarViewShown="false"/>
 </LinearLayout>

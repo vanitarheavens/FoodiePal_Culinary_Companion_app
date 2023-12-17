@@ -6,13 +6,11 @@
     android:background="?attr/fullscreenBackgroundColor"
     android:theme="@style/ThemeOverlay.FoodiePalCulinaryCompanion.FullscreenContainer"
     tools:context=".ContactFragment">
-
     <!-- fragment_contact.xml -->
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <TextView
             android:id="@+id/textViewTitle"
             android:layout_width="wrap_content"
@@ -23,8 +21,7 @@
             android:textColor="#0000FF"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"/>
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,8 +29,7 @@
             android:layout_below="@id/textViewTitle"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"/>
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +37,6 @@
             android:layout_below="@id/btnCall"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"/>
-
     </RelativeLayout>
-
 </FrameLayout>
+

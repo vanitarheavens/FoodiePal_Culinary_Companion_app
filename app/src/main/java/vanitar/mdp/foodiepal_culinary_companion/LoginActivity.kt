@@ -25,12 +25,12 @@ class LoginActivity : AppCompatActivity() {
         loginButton = findViewById(R.id.loginButton)
 
         registerButton.setOnClickListener {
-            // Perform registration
+
             handleRegistration()
         }
 
         loginButton.setOnClickListener {
-            // Perform login
+
             handleLogin()
         }
     }
@@ -41,15 +41,15 @@ class LoginActivity : AppCompatActivity() {
 
         if (isUsernameValid(username) && isPasswordValid(password)) {
 
-            // Save the username using SharedPreferences (for demonstration purposes)
+            // Save the username using SharedPreferences
             saveCredentials(username, password)
 
             showToast("Registration successful! Welcome, $username!")
 
-            // Log in the user after registration
+            // Log in user after registration
             handleLogin()
 
-            // Clear the username and password fields
+            // Clear username and password fields
             clearInputFields()
         } else {
             showToast("Invalid username or password. Please check your input.")
@@ -69,7 +69,7 @@ class LoginActivity : AppCompatActivity() {
             // Successful login
             showToast("Login successful! Welcome back, $enteredUsername!")
 
-            // Navigate to MainActivity or another activity if needed
+            // Navigating to MainActivity
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         } else {
@@ -84,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
         val sharedPreferences = getPreferences(Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         editor.putString(KEY_USERNAME, username)
-        // In a real app, you should securely store the password, potentially hashed with salt.
+
         editor.putString(KEY_PASSWORD, password)
         editor.apply()
     }
